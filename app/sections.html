@@ -234,7 +234,7 @@
 			</div>
 		</div>
 </header>
-<div class="container catalog" style="background: url(../img/sections_bg.png) no-repeat center top;">
+<div class="container catalog">
 	<div class="row">
 		<div class="col-12">
 		 <ul class="breadcrumb">
@@ -248,7 +248,7 @@
 	</div>
 	<div class="row">	
 		<div class="col-12">
-			<div class="catalog_banner"></div>
+			<div class="catalog_banner" style="background: url(img/sections_banner.png) no-repeat;"></div>
 		</div>
 	</div>
 	<div class="row">	
@@ -257,115 +257,443 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-2 filter">
+		<div class="col-md-2">
+			<form action="" class="filter">
 			<div class="filter_block">
 				<div class="filter_block_name">Пол:</div>
 				<div class="filter_block_list">
+					<div>
 					<input class="checkbox" type="checkbox" id="ossm" name="ossm"> 
 					<label for="ossm">Женский</label> 
+					</div>
+					<div>
+					<input class="checkbox" type="checkbox" id="ossm2" name="ossm"> 
+					<label for="ossm2">Мужской</label>
+					</div> 
+					<div>
+					<input class="checkbox" type="checkbox" id="ossm3" name="ossm"> 
+					<label for="ossm3">Аксессуары</label> 
+					</div>
 				</div>
 			</div>
+			<div class="filter_block">
+				<div class="filter_block_name">Выберите цену:</div>
+				<div class="filter_block_list">
+					<div class="filterRange" data-step="100">
+
+                        <div class="filterRangeBox ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
+
+                        <div class="filterRangeInputs">
+                            <div class="filterRangeInputsLeft">
+                                <span class="filterRangeInputsTitle">от</span>
+                                <input id="ch_price" data-val-min="2790" value="2790" data-start="2790" placeholder="" class="filterRangeStart" name="filter[filter_price_from]" type="text">
+
+                            </div>
+                            <div class="filterRangeInputsRight">
+                                <span class="filterRangeInputsTitle">до</span>
+                                <input data-val-max="10990" value="10990" data-end="10990" placeholder="" class="filterRangeFinish" name="filter[filter_price_to]" type="text">
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<div class="filter_block">
+				<div class="filter_block_name">Выберите размер:</div>
+				<div class="filter_block_list">
+					<div>
+					<input class="checkbox" type="checkbox" id="36" name="ossm"> 
+					<label for="36">36</label> 
+					</div>
+					<div>
+					<input class="checkbox" type="checkbox" id="37" name="ossm"> 
+					<label for="37">37</label>
+					</div> 
+					<div>
+					<input class="checkbox" type="checkbox" id="38" name="ossm"> 
+					<label for="38">38</label> 
+					</div>
+					<div>
+					<input class="checkbox" type="checkbox" id="39" name="ossm"> 
+					<label for="39">39</label> 
+					</div>
+					<div>
+					<input class="checkbox" type="checkbox" id="40" name="ossm"> 
+					<label for="40">40</label> 
+					</div>
+					<div>
+					<input class="checkbox" type="checkbox" id="41" name="ossm"> 
+					<label for="41">41</label> 
+					</div>
+					<div>
+					<input class="checkbox" type="checkbox" id="42" name="ossm"> 
+					<label for="42">42</label> 
+					</div>
+					<div>
+					<input class="checkbox" type="checkbox" id="43" name="ossm"> 
+					<label for="43">43</label> 
+					</div>
+					<div>
+					<input class="checkbox" type="checkbox" id="44" name="ossm"> 
+					<label for="44">44</label> 
+					</div>
+					<div>
+					<input class="checkbox" type="checkbox" id="45" name="ossm"> 
+					<label for="45">45</label> 
+					</div>
+					<div>
+					<input class="checkbox" type="checkbox" id="46" name="ossm"> 
+					<label for="46">46</label> 
+					</div>
+					<div>
+					<input class="checkbox" type="checkbox" id="47" name="ossm"> 
+					<label for="47">47</label> 
+					</div>
+				</div>
+			</div>
+			<div class="filter_block">
+				<div class="filter_block_name">Бренд:</div>
+				<div class="filter_block_list">
+					<div>
+					<input class="checkbox" type="checkbox" id="Converse" name="ossm"> 
+					<label for="Converse">Converse</label> 
+					</div>
+					<div>
+					<input class="checkbox" type="checkbox" id="Vans" name="ossm"> 
+					<label for="Vans">Vans</label>
+					</div> 
+				</div>
+			</div>
+			<div class="filter_block">
+				<div class="filter_block_name">Коллекция:</div>
+				<div class="filter_block_list">
+					<div>
+					<input class="checkbox" type="checkbox" id="Chuck Taylor All Star" name="ossm"> 
+					<label for="Chuck Taylor All Star">Chuck Taylor All Star</label> 
+					</div>
+					<div>
+					<input class="checkbox" type="checkbox" id="Chuck Taylor All Star ||" name="ossm"> 
+					<label for="Chuck Taylor All Star ||">Chuck Taylor All Star ||</label>
+					</div> 
+					<div>
+					<input class="checkbox" type="checkbox" id="Jack Purcell" name="ossm"> 
+					<label for="Jack Purcell">Jack Purcell</label>
+					</div> 
+					<div>
+					<input class="checkbox" type="checkbox" id="Counter Climate" name="ossm"> 
+					<label for="Counter Climate">Counter Climate</label>
+					</div> 
+				</div>
+			</div>
+			<div class="filter_block">
+				<div class="filter_block_name">Сезон:</div>
+				<div class="filter_block_list">
+					<div>
+					<input class="checkbox" type="checkbox" id="summer" name="ossm"> 
+					<label for="summer">Лето</label> 
+					</div>
+					<div>
+					<input class="checkbox" type="checkbox" id="winter" name="ossm"> 
+					<label for="winter">Зима</label>
+					</div> 
+					<div>
+					<input class="checkbox" type="checkbox" id="spring_autumn" name="ossm"> 
+					<label for="spring_autumn">Весна – Осень</label>
+					</div> 
+					<div>
+					<input class="checkbox" type="checkbox" id="autumn_winter" name="ossm"> 
+					<label for="autumn_winter">Осень – Зима</label>
+					</div> 
+				</div>
+			</div>
+			<div class="filter_block">
+				<div class="filter_block_name">Дополнительно:</div>
+				<div class="filter_block_list">
+					<div>
+					<input class="checkbox" type="checkbox" id="sale" name="ossm"> 
+					<label for="sale">SALE</label> 
+					</div>
+					<div>
+					<input class="checkbox" type="checkbox" id="new" name="ossm"> 
+					<label for="new">Новинки</label>
+					</div> 
+				</div>
+			</div>
+			<div class="filter_block">
+				<div class="filter_block_name">Материал:</div>
+				<div class="filter_block_list">
+					<div>
+					<input class="checkbox" type="checkbox" id="sale" name="ossm"> 
+					<label for="sale">Текстиль</label> 
+					</div>
+					<div>
+					<input class="checkbox" type="checkbox" id="new" name="ossm"> 
+					<label for="new">Кожа</label>
+					</div> 
+					<div>
+					<input class="checkbox" type="checkbox" id="new" name="ossm"> 
+					<label for="new">Исскуственная эко – кожа</label>
+					</div> 
+					<div>
+					<input class="checkbox" type="checkbox" id="new" name="ossm"> 
+					<label for="new">Синтетика</label>
+					</div> 
+				</div>
+			</div>
+			<div class="filter_block">
+				<div class="filter_block_name">Цвет:</div>
+				<div class="filter_block_list">
+					<ul class="filter_block_list_colors">
+						<li>
+							<input class="checkbox" type="checkbox" id="white" name="ossm"> 
+							<label for="white"></label>
+						</li>
+						<li>
+							<input class="checkbox" type="checkbox" id="red" name="ossm"> 
+							<label class="red" for="red" style="background-color: #ff0200;"></label>
+						</li>
+						<li>
+							<input class="checkbox" type="checkbox" id="light_brown" name="ossm"> 
+							<label class="light_brown" for="light_brown" style="background-color: #f5f5db;"></label>
+						</li>
+						<li>
+							<input class="checkbox" type="checkbox" id="yellow" name="ossm"> 
+							<label class="yellow" for="yellow" style="background-color: #ffff00;"></label>
+						</li>
+						<li>
+							<input class="checkbox" type="checkbox" id="green" name="ossm"> 
+							<label class="green" for="green" style="background-color: #00a551;"></label>
+						</li>
+						<li>
+							<input class="checkbox" type="checkbox" id="pink" name="ossm"> 
+							<label class="pink" for="pink" style="background-color: #ff69b5;"></label>
+						</li>
+						<li>
+							<input class="checkbox" type="checkbox" id="black" name="ossm"> 
+							<label class="black" for="black" style="background-color: #000000;"></label>
+						</li>
+						<li>
+							<input class="checkbox" type="checkbox" id="grey" name="ossm"> 
+							<label class="grey" for="grey" style="background-color: #b2b2b2;"></label>
+						</li>
+						<li>
+							<input class="checkbox" type="checkbox" id="brown" name="ossm"> 
+							<label class="brown" for="brown" style="background-color: #964c00;"></label>
+						</li>
+						<li>
+							<input class="checkbox" type="checkbox" id="blue" name="ossm"> 
+							<label class="blue" for="blue" style="background-color: #0056ff;"></label>
+						</li>
+						<li>
+							<input class="checkbox" type="checkbox" id="dark_blue" name="ossm"> 
+							<label class="dark_blue" for="dark_blue" style="background-color: #191a70;"></label>
+						</li>
+						<li>
+							<input class="checkbox" type="checkbox" id="multi" name="ossm"> 
+							<label class="multi" for="multi" style="background-color: #f5f5db;"></label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<button class="but" type="submit">Применить</button>
+		</form>
 		</div>
 		<div class="col-md-10">	
 			<div class="row">
+				<div class="col-12">
+					<div class="catalog_result">Найдено товаров: <span class="catalog_result_numb">176</span></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-7">
+					<div class="catalog_result_filters">
+						<span>Выбрано:</span>
+						<div class="catalog_result_filters_block">
+							<a href="#">Женский</a>
+							<a href="#">Мужской</a>
+							<a href="#">Converse</a>
+							<a href="#">Красный</a>
+							<a href="#">Chuck Taylor all Star</a>
+						</div>		
+					</div>
+				</div>
+				<div class="col-md-5 d-flex justify-content-end">
+					<div class="catalog_result_sort">
+						<span>Сортировать по:</span>
+						<a href="#" class="catalog_result_sort_link active">Популярности</a>
+						<a href="#" class="catalog_result_sort_link">Цене</a>
+						<a href="#" class="catalog_result_sort_link">Названию</a>
+					</div>
+				</div>
+			</div>
+		<div class="page">
+		<div class="row padding_top65">
+		<div class="col-md-4">
+			<div class="catalog_item">
+				<div class="catalog_item-discount">-53%</div>
+				<div class="catalog_item-img">
+					<img src="img/catalog/recomend.png" alt="recomend">	
+				</div>
+				<div class="catalog_item-disc">
+					<div class="catalog_item-new catalog_new"></div>
+					<a href="" class="brand">Converse</a>
+					<a href="" class="model">All star black &amp; white</a>
+					<div class="clearfix">
+						<div class="reviews_review-raiting-stars"><span class="active"><i class="fa fa-star" aria-hidden="true"></i></span><span class="active"><i class="fa fa-star" aria-hidden="true"></i></span><span class="active"><i class="fa fa-star" aria-hidden="true"></i></span><span class="active"><i class="fa fa-star" aria-hidden="true"></i></span><span><i class="fa fa-star" aria-hidden="true"></i></span>
+						<div class="star-rating_review_count">(12)</div>
+						</div>
+					</div>
+					<div class="price">
+						<span class="price-old">25000</span>
+						<span class="price-cur">12000 руб</span>
+						<a href="#" class="catalog_basket"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="catalog_item">
+				<div class="catalog_item-discount">-53%</div>
+				<div class="catalog_item-img">
+					<img src="img/catalog/recomend.png" alt="recomend">	
+				</div>
+				<div class="catalog_item-disc">
+					<div class="catalog_item-new catalog_hit"></div>
+					<a href="" class="brand">Converse</a>
+					<a href="" class="model">All star black &amp; white</a>
+					<div class="clearfix">
+						<div class="reviews_review-raiting-stars"><span class="active"><i class="fa fa-star" aria-hidden="true"></i></span><span class="active"><i class="fa fa-star" aria-hidden="true"></i></span><span class="active"><i class="fa fa-star" aria-hidden="true"></i></span><span class="active"><i class="fa fa-star" aria-hidden="true"></i></span><span><i class="fa fa-star" aria-hidden="true"></i></span>
+						<div class="star-rating_review_count">(12)</div>
+						</div>
+					</div>
+					<div class="price">
+						<span class="price-old">25000</span>
+						<span class="price-cur">12000 руб</span>
+						<a href="#" class="catalog_basket"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+				<div class="catalog_item-discount">-53%</div>
+			<div class="catalog_item">
+				<div class="catalog_item-img">
+					<img src="img/catalog/recomend.png" alt="recomend">	
+				</div>
+				<div class="catalog_item-disc">
+					<div class="catalog_item-new catalog_hit_new"></div>
+					<a href="" class="brand">Converse</a>
+					<a href="" class="model">All star black &amp; white</a>
+					<div class="clearfix">
+						<div class="reviews_review-raiting-stars"><span class="active"><i class="fa fa-star" aria-hidden="true"></i></span><span class="active"><i class="fa fa-star" aria-hidden="true"></i></span><span class="active"><i class="fa fa-star" aria-hidden="true"></i></span><span class="active"><i class="fa fa-star" aria-hidden="true"></i></span><span><i class="fa fa-star" aria-hidden="true"></i></span>
+						<div class="star-rating_review_count">(12)</div>
+						</div>
+					</div>
+					<div class="price">
+						<span class="price-old">25000</span>
+						<span class="price-cur">12000 руб</span>
+						<a href="#" class="catalog_basket"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+		<div class="row catalog_pagination">
+			<div class="col-md-4 d-flex justify-content-start">
+				<div class="catalog_pagination_left">
+					<a href="#" class="catalog_pagination_left_link">1</a><a href="#" class="catalog_pagination_left_link">2</a>
+					<span>...</span>
+					<a href="#" class="catalog_pagination_left_link">76</a>
 
-		<div class="col-md-4">
-			<div class="catalog_item">
-				<div class="catalog_item-discount">-53%</div>
-				<div class="catalog_item-img">
-					<img src="img/catalog/recomend.png" alt="recomend">	
 				</div>
-				<div class="catalog_item-disc">
-					<div class="catalog_item-new"></div>
-					<a href="" class="brand">Converse</a>
-					<a href="" class="model">All star black &amp; white</a>
-					 <div class="star-rating">
-						<div class="star-rating__wrap">
-						  <input class="star-rating__input" id="star-rating-5" name="rating" value="5" type="radio">
-						  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
-						  <input class="star-rating__input" id="star-rating-4" name="rating" value="4" type="radio">
-						  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
-						  <input class="star-rating__input" id="star-rating-3" name="rating" value="3" type="radio">
-						  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
-						  <input class="star-rating__input" id="star-rating-2" name="rating" value="2" type="radio">
-						  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
-						  <input class="star-rating__input" id="star-rating-1" name="rating" value="1" type="radio">
-						  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
-						<div class="star-rating_review_count">(12)</div>
-						</div>
-					 </div>
-					<div class="price">
-						<span class="price-old">25000</span>
-						<span class="price-cur">12000 руб</span>
-					</div>
+			</div>
+			<div class="col-md-4 d-flex justify-content-center"><div class="catalog_pagination_mid"><a href="#" class="but yellow">Показать ещё</a></div></div>
+			<div class="col-md-4 d-flex justify-content-end"><a href="#" class="but">Дальше</a></div>
+		</div>
+		</div>
+	</div>
+</div>
+<div class="separator_big"></div>
+<div class="container">	
+	<div class="row">
+		<div class="col-12 d-flex">
+			<div class="catalog_seo_features">
+				<div class="catalog_seo_features_element">
+					<span class="catalog_seo_features_element_head">Примерка перед покупкой</span>
+					<span class="catalog_seo_features_element_txt">Бесплатно доставим<br> на примерку до 2 пар обуви</span>
+				</div>
+			</div>
+			<div class="catalog_seo_features">
+				<div class="catalog_seo_features_element el2">
+					<span class="catalog_seo_features_element_head">Гарантируем безопасность</span>
+					<span class="catalog_seo_features_element_txt">100% вернём деньги или обменяем,<br>
+если товар не подошёл /span>
+				</div>
+			</div>
+			<div class="catalog_seo_features">
+				<div class="catalog_seo_features_element el3">
+					<span class="catalog_seo_features_element_head">Обувь как на фото</span>
+					<span class="catalog_seo_features_element_txt">100% Соответствие товара <br>
+с фотографиями на сайте</span>
+				</div>
+			</div>
+			<div class="catalog_seo_features">
+				<div class="catalog_seo_features_element el4">
+					<span class="catalog_seo_features_element_head">Гарантия подлинности</span>
+					<span class="catalog_seo_features_element_txt">Официальный магазин<br>
+UGG Australia</span>
+				</div>
+			</div>
+			<div class="catalog_seo_features">
+				<div class="catalog_seo_features_element el5">
+					<span class="catalog_seo_features_element_head">Скидка 500 рублей</span>
+					<span class="catalog_seo_features_element_txt">При покупке от 2 пар –<br>
+скидка от 500 рублей</span>
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4">
+	</div>
+</div>
+<div class="container latest padding_top65">
+	<div class="row justify-content-center">	
+		<h3>Недавно просмотренные</h3>
+	</div>
+<div class="row latest_block">
+	<div class="col-md-3">
 			<div class="catalog_item">
-				<div class="catalog_item-discount">-53%</div>
-				<div class="catalog_item-img">
+				<div class="catalog_item-img"><a href="#"></a>
 					<img src="img/catalog/recomend.png" alt="recomend">	
-				</div>
-				<div class="catalog_item-disc">
-					<div class="catalog_item-new"></div>
-					<a href="" class="brand">Converse</a>
-					<a href="" class="model">All star black &amp; white</a>
-					 <div class="star-rating">
-						<div class="star-rating__wrap">
-						  <input class="star-rating__input" id="star-rating-5" name="rating" value="5" type="radio">
-						  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
-						  <input class="star-rating__input" id="star-rating-4" name="rating" value="4" type="radio">
-						  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
-						  <input class="star-rating__input" id="star-rating-3" name="rating" value="3" type="radio">
-						  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
-						  <input class="star-rating__input" id="star-rating-2" name="rating" value="2" type="radio">
-						  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
-						  <input class="star-rating__input" id="star-rating-1" name="rating" value="1" type="radio">
-						  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
-						<div class="star-rating_review_count">(12)</div>
-						</div>
-					 </div>
-					<div class="price">
-						<span class="price-old">25000</span>
-						<span class="price-cur">12000 руб</span>
-					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4">
-				<div class="catalog_item-discount">-53%</div>
+	<div class="col-md-3">
 			<div class="catalog_item">
-				<div class="catalog_item-img">
-					<img src="img/catalog/recomend.png" alt="recomend">	
-				</div>
-				<div class="catalog_item-disc">
-					<div class="catalog_item-new"></div>
-					<a href="" class="brand">Converse</a>
-					<a href="" class="model">All star black &amp; white</a>
-					 <div class="star-rating">
-						<div class="star-rating__wrap">
-						  <input class="star-rating__input" id="star-rating-5" name="rating" value="5" type="radio">
-						  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
-						  <input class="star-rating__input" id="star-rating-4" name="rating" value="4" type="radio">
-						  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
-						  <input class="star-rating__input" id="star-rating-3" name="rating" value="3" type="radio">
-						  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
-						  <input class="star-rating__input" id="star-rating-2" name="rating" value="2" type="radio">
-						  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
-						  <input class="star-rating__input" id="star-rating-1" name="rating" value="1" type="radio">
-						  <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
-						<div class="star-rating_review_count">(12)</div>
-						</div>
-					 </div>
-					<div class="price">
-						<span class="price-old">25000</span>
-						<span class="price-cur">12000 руб</span>
-					</div>
+				<div class="catalog_item-img"><a href="#"></a>
+					<img src="img/catalog/converse.png" alt="recomend">	
 				</div>
 			</div>
 		</div>
+	<div class="col-md-3">
+			<div class="catalog_item">
+				<div class="catalog_item-img"><a href="#"></a>
+					<img src="img/catalog/converse2.png" alt="recomend">	
+				</div>
 			</div>
+		</div>
+	<div class="col-md-3">
+			<div class="catalog_item">
+				<div class="catalog_item-img"><a href="#"></a>
+					<img src="img/catalog/converse3.png" alt="recomend">	
+				</div>
+			</div>
+		</div>
+</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-12 catalog_seo_text padding_top65 padding_bottom65">
+			<strong>Converse</strong>
+			<p>современная модификация легендарной модели CTAS. Анатомическая стелька Lunarlon поддерживает стопу и обеспечивает дополнительный комфорт. Мягкая внутренняя отделка из перфорированной замши, премиальный канвас в качестве ткани верха, продуманная фиксация язычка – все это гарантирует удобство и долговечность. Выкрашенные в цвет модели люверсы добавляют стиля. Верхний люверс украшен логотипом CTAS. Классические детали: логотип на внешней стороне пятки и узнаваемая круглая нашивка связывают модель с традицией и историей бренда. “А вы готовы к большему?”</p>
 		</div>
 	</div>
 </div>
@@ -425,6 +753,6 @@
 	</div>
 </footer>
 	<script src="js/scripts.min.js"></script>
-
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 </html>
