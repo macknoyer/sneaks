@@ -73,8 +73,53 @@ var catalogFilter = {
         });
     }
 };
+var catalogNew = {
+    init: function () {
+        this.hoverEl();
+    },
+
+    hoverEl: function () {
+        // $("body").on("mouseenter", ".catalog_item:not(.init)", function () {
+        //     $(this).addClass("init").find(".lazyImg").trigger("unveil");
+        // });
+        $("body").on("mouseleave", ".catalog_item", function () {
+            if($(this).find(".catalogNewItemPreviewsList").length) {
+                $(this)
+                    .find(".catalogNewItemPreviewsList .active")
+                    .removeClass("active");
+                var newSrc = $(this)
+                    .find(".catalogNewItemPreviewsList a:first")
+                    .attr("data-img");
+                $(this)
+                    .find(".catalogNewItemPreviewsList a:first")
+                    .addClass("active");
+                $(this)
+                    .find(".catalog_item-img img")
+                    .attr("src", newSrc);
+            }
+        });
+
+        $("body").on("mouseenter", ".catalogNewItemPreviewsList a", function () {
+            var newSrc = $(this).attr("data-img");
+            $(this)
+                .addClass("init")
+                .closest(".catalog_item")
+                .find(".catalogNewItemPreviewsList .active")
+                .removeClass("active");
+
+            $(this)
+                .addClass("active")
+                .closest(".catalog_item")
+                .find(".catalog_item-img img")
+                .attr("src", newSrc);
+        });
+
+    }
+};
+
     $(document).ready(function() {
-     catalogFilter.init();
+    catalogFilter.init();
+    catalogNew.init();
     $('.select').select2();
     $(".banner_index_top").owlCarousel({
         items:1,

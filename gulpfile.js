@@ -18,7 +18,7 @@ gulp.task('browser-sync', function() {
 			baseDir: 'app'
 		},
 		notify: false,
-		open: false,
+		open: true,
 		// tunnel: true,
 		//tunnel: "projectname", //Demonstration page: http://projectname.localtunnel.me
 	})
@@ -39,6 +39,8 @@ gulp.task('js', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/select2/select2.min.js',
 		'app/libs/owl/owl.carousel.min.js',
+		'app/libs/lazyimg/lazyImg.js',
+		'app/libs/fancybox/dist/jquery.fancybox.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
