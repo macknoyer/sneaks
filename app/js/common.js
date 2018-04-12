@@ -252,4 +252,9 @@ var cardNew = {
         $(this).removeClass('active');
         $(this).find('.header_bottom-menu_slide').slideUp();
     });
+    $('.filter_block_name').on('click', function() {
+        var $filter_block = $(this);
+        $filter_block.toggleClass('active');
+        $filter_block.next('.filter_block_list').slideToggle();
+    });
 });

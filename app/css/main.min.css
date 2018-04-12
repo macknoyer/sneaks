@@ -4185,9 +4185,11 @@ a.logo {
 
 .detail .price-cur {
   font-size: 30px;
-  font-style: italic; }
+  font-style: italic;
+  margin-right: 60px; }
 
 .detail .price-old {
+  margin-right: 0;
   font-size: 21px; }
 
 .detail_table table {
@@ -4232,9 +4234,9 @@ a.logo {
 .detail_delivery_information h3 {
   padding-bottom: 1rem; }
 
-.detail_delivery_information ul {
+.detail_delivery_information ul, .detail_delivery_information ol {
   list-style: inside; }
-  .detail_delivery_information ul li {
+  .detail_delivery_information ul li, .detail_delivery_information ol li {
     line-height: 1.65; }
 
 .detail_delivery_information span {
@@ -4951,6 +4953,8 @@ a.logo {
 .latest_block {
   padding-top: 45px;
   padding-bottom: 10px; }
+  .latest_block .catalog_item:hover:before {
+    display: none; }
 
 .social {
   margin-top: 14px; }

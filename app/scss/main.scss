@@ -1403,8 +1403,11 @@ a.logo {
 		&-cur {
 			font-size: 30px;
 			font-style: italic;
+   			margin-right: 60px;
+
 		}
 		&-old {
+			margin-right: 0;
 			font-size: 21px;
 		}
 	}
@@ -1461,7 +1464,7 @@ a.logo {
 		h3 {
 			padding-bottom: 1rem;
 		}
-		ul {
+		ul,ol {
 			list-style: inside;
 			li {
 				line-height: 1.65;
@@ -2280,6 +2283,9 @@ a.logo {
 	&_block {
 		padding-top: 45px;
 		padding-bottom: 10px;
+			.catalog_item:hover:before {
+			    display: none;
+			}
 	}
 }
 .social {
