@@ -240,6 +240,14 @@ var cardNew = {
         dots: true,
         autoplay: true
     });
+    $(".cardNewVersions").owlCarousel({
+        loop: false,
+        dots: false,
+        autoplay: false,
+        autoWidth:true,
+        navText: false,
+        nav: true
+    });
 });
     $('ul.recomend_tabs').on('click', 'li:not(.active)', function() {
     $(this).addClass('active').siblings().removeClass('active').parents().find('.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
@@ -257,4 +265,27 @@ var cardNew = {
         $filter_block.toggleClass('active');
         $filter_block.next('.filter_block_list').slideToggle();
     });
+    $().fancybox({
+        selector : '[data-type="ajax"]',
+        touch: false,
+        afterShow : function(){
+            $('.select_detail').select2();
+            $(".cardNewVersions").owlCarousel({
+                loop: false,
+                dots: false,
+                autoplay: false,
+                autoWidth:true,
+                navText: false,
+                nav: true
+            });
+
+        }
+    });
+//     $().fancybox({
+//     afterLoad: function() {
+//         $('.content').show().scrollingCarousel({
+//             scrollerAlignment: 'vertical'
+//         });
+//     }
+// });​
 });
